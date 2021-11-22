@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+#footer-side{
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+#footer-side p{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30%;
+}
+#footer-side p:hover{
+    color: red;
+
+}
+#footer-side address{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30%;
+
+}
+
+/* main{
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(3,-1fr); 
+    border: 1px solid black;
+    grid-template-columns: repeat(auto-filt, minmax(3,1fr));
+    grid-auto-columns:900px ;
+    grid-auto-rows: 400px;
+} */
+
+nav{
+background-color:#1b1b1b;
+display: flex;
+height: 80px;
+align-items: center;
+justify-content: space-between;
+padding: 0px 50px 0 100px;
+
+}
+nav #logo{
+    font-size: 30px;
+    color: white;
+    font-weight: 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 6px;   
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+transition: all 0.3s ease;
+    
+}
+nav ul li a:hover{
+background-color:tomato;
+color: white;
+}
+
+#click{
+    display: none;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 10px 02px 10px rgb(119, 120, 121);
+}
+
+@media (max-width:480) {
+    nav{
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    .carousel-slide{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:850px){
+ 
+    nav{
+     position: relative;
+     z-index: 1;
+     width: 100%;
+ }
+    nav ul {
+        position: fixed;
+        display: block;
+        background-color:black;
+        margin-top: 270px;
+        text-align: center;
+        left: -100%;
+        width: 100%;
+        transition: ease all 0.4s;
+    }
+    
+    /* main{  
+        display: grid;
+        width: 100%;
+        grid-template-rows: repeat(3,-1fr); 
+        border: 1px solid black;
+        grid-template-columns: repeat(auto-filt, minmax(3,1fr));
+        grid-auto-columns:900px ;
+        grid-auto-rows: 400px;
+     }  */
+
+    .carousel-slide{
+        width: 100%;
+    }
+
+    
+    nav ul li{
+        margin-top: 20px;
+        
+    }
+
+    nav ul li a:hover{
+        color: rgb(10, 188, 233);
+    }
+
+    #click{
+        display: block;
+        cursor: pointer;
+    }
+#click:checked ~ ul{
+
+    left: 0%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.footer-side address{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+}
